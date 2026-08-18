@@ -3,16 +3,10 @@ public:
     vector<int> sortedSquares(vector<int>& nums) {
         int n=nums.size();
         for(int i=0;i<n;i++){
-            if(nums[i]<0){
-              nums[i]=(-nums[i]);
-              nums[i]=nums[i]*nums[i];
-          }
-          else{
             nums[i]*=nums[i];
-          }
         }
         sort(nums.begin(),nums.end());
         return nums;
-
+    //t.c.=o(nlogn) s.c.=o(1)
     }
 };
