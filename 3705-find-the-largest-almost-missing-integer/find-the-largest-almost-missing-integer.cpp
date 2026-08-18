@@ -3,7 +3,7 @@ public:
     int largestInteger(vector<int>& nums, int k) {
         //to store freq of each digit in array
         int n=nums.size();
-        map<int,int>mp;
+        unordered_map<int,int>mp;
         for(int i:nums){
             mp[i]++;
         }
