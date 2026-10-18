@@ -9,7 +9,6 @@ public:
             }
             hash[nums[i]] = i;
         }
-        // Return an empty vector if no solution is found
         return {};
     }
 };
